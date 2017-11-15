@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo '-----> couchbase-buildpack: navigating to build dir'
+cd libcouchbase && mkdir build && cd build
+
+echo '-----> couchbase-buildpack: configuring'
+../cmake/configure
+
+echo '-----> couchbase-buildpack: make'
+make
+
+exit 0
