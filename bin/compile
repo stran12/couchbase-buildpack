@@ -10,9 +10,6 @@ ls -al bin
 echo '-----> couchbase-buildpack: navigating to build dir'
 cd bin/libcouchbase && mkdir build && cd build
 
-echo 'whawt is in couchbase?'
-ls -al bin/libcouchbase
-
 echo 'what is above me?'
 ls -al ../
 
