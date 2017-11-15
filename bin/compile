@@ -4,12 +4,14 @@ set -e
 
 WORK_DIR=$1
 
-ls -al
+echo 'what is in bin'
+ls -al bin
 
 echo '-----> couchbase-buildpack: navigating to build dir'
 cd bin/libcouchbase && mkdir build && cd build
 
-ls -al
+echo 'whawt is in couchbase?'
+ls -al bin/libcouchbase
 
 echo 'what is above me?'
 ls -al ../
