@@ -5,7 +5,7 @@ set -e
 WORK_DIR=$1
 
 echo '-----> couchbase-buildpack: navigating to build dir'
-cd ${WORK_DIR}/libcouchbase && mkdir build && cd build
+cd bin/libcouchbase && mkdir build && cd build
 
 echo '-----> couchbase-buildpack: configuring'
 ../cmake/configure
