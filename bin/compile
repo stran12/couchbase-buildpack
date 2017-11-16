@@ -16,6 +16,8 @@ make -j4
 make install
 cd $1
 
+echo 'where am i?'
+pwd
 echo 'what is in bin'
 ls -al bin
 
